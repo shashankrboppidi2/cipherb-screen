@@ -80,14 +80,16 @@ def main():
     hours = os.getenv("ET_HOURS", "")
     if hours and str(NOW.astimezone(ET).hour) not in hours.split(","): print("not a scheduled ET hour; skipping"); return
     os.makedirs(RESULTS, exist_ok=True)
-    rows = run_equities() + run_crypto()
-    df = pd.DataFrame(rows); df.to_csv(f"{RESULTS}/gold_latest.csv", index=False)
-    hits = df[df.fired]
-    if len(hits): hits.to_csv(f"{RESULTS}/gold_hits_{STAMP}.csv", index=False)
-    page = html(df); open(f"{RESULTS}/gold_latest.html", "w").write(page)
-    print(f"checked {len(df)}; gold dots: {int(df.gold_any.sum())}; fired (WT2<={WT_LINE}): {len(hits)}")
+    scope = os.getenv("GOLD_UNIVERSE", "all")          # all | equity | crypto
+    rows = (run_equities() if scope in ("all", "equity") else []) + (run_crypto() if scope in ("all", "crypto") else [])
+    tag = "gold" if scope == "all" else f"gold_{scope}"
+    df = pd.DataFrame(rows); df.to_csv(f"{RESULTS}/{tag}_latest.csv", index=False)
+    hits = df[df.fired] if len(df) else df
+    if len(hits): hits.to_csv(f"{RESULTS}/{tag}_hits_{STAMP}.csv", index=False)
+    page = html(df); open(f"{RESULTS}/{tag}_latest.html", "w").write(page)
+    print(f"[{scope}] checked {len(df)}; gold dots: {int(df.gold_any.sum()) if len(df) else 0}; fired (WT2<={WT_LINE}): {len(hits)}")
     if len(hits) or os.getenv("GOLD_MAIL_ALWAYS") == "1":
-        send_mail(f"GOLD dot 1h {NOW.astimezone(ET):%m-%d %H:%M} ET: {len(hits)} hit(s)", page)
+        send_mail(f"GOLD dot 1h {scope} {NOW.astimezone(ET):%m-%d %H:%M} ET: {len(hits)} hit(s)", page)
 
 if __name__ == "__main__":
     main()
