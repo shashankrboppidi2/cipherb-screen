@@ -19,6 +19,7 @@ from email.mime.text import MIMEText
 import numpy as np, pandas as pd, yfinance as yf
 from cipherb import signals, to_4h_rth
 warnings.filterwarnings("ignore")
+import logging; logging.getLogger("yfinance").setLevel(logging.CRITICAL)
 
 # ---------------- rule parameters ----------------
 WT_TROUGH   = -60      # 4h WT2 trough must reach this (the drawn white line)
@@ -116,14 +117,26 @@ def run_screen(universe):
     return pd.DataFrame(rows)
 
 # ---------------- enrichment ----------------
+_META = None
+def meta_table():
+    global _META
+    if _META is None:
+        _META = pd.read_csv("universe_meta.csv").set_index("tv").to_dict("index") if os.path.exists("universe_meta.csv") else {}
+    return _META
+
 def enrich(tv):
     t = yf.Ticker(yh(tv)); out = {"tv": tv}
-    try:
-        i = t.info
-        out.update(name=i.get("shortName"), sector=i.get("sector"), industry=i.get("industry"),
-                   mcap_b=round((i.get("marketCap") or 0) / 1e9, 1),
-                   summary=(i.get("longBusinessSummary") or "")[:400])
-    except Exception: pass
+    m = meta_table().get(tv)
+    if m and isinstance(m.get("sector"), str):
+        out.update(name=m.get("name"), sector=m.get("sector"), industry=m.get("industry"),
+                   mcap_b=m.get("mcap_b"), summary=m.get("summary") or "")
+    else:
+        try:  # Yahoo blocks this endpoint from cloud IPs; fine locally
+            i = t.info
+            out.update(name=i.get("shortName"), sector=i.get("sector"), industry=i.get("industry"),
+                       mcap_b=round((i.get("marketCap") or 0) / 1e9, 1),
+                       summary=(i.get("longBusinessSummary") or "")[:400])
+        except Exception: pass
     try:
         c = t.history(period="1y").Close
         out.update(ret_1m=round((c.iloc[-1] / c.iloc[-22] - 1) * 100, 1),
@@ -180,9 +193,12 @@ def send_mail(subject, html):
         print("mail not configured; skipping"); return
     m = MIMEMultipart("alternative"); m["Subject"], m["From"], m["To"] = subject, user, to
     m.attach(MIMEText(html, "html"))
-    with smtplib.SMTP(host, int(os.getenv("SMTP_PORT", "587"))) as s:
-        s.starttls(); s.login(user, pw); s.sendmail(user, to.split(","), m.as_string())
-    print("mail sent to", to)
+    try:
+        with smtplib.SMTP(host, int(os.getenv("SMTP_PORT", "587"))) as s:
+            s.starttls(); s.login(user, pw); s.sendmail(user, to.split(","), m.as_string())
+        print("mail sent to", to)
+    except Exception as e:
+        print("MAIL FAILED (results still saved):", str(e)[:200])
 
 def in_et_window(spec):
     """spec like '13:30-14:30'. GitHub cron is UTC-only, so the workflow fires twice an hour apart
