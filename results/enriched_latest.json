@@ -1,69 +1,69 @@
 [
  {
-  "tv": "NYSE:XPEV",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -10.6,
-  "ret_3m": -30.7,
-  "off_52w_high": -61.8,
-  "next_earnings": "2026-11-16",
+  "tv": "NYSE:STZ",
+  "name": "Constellation Brands, Inc.",
+  "sector": "Consumer Defensive",
+  "industry": "Beverages - Brewers",
+  "mcap_b": 20.8,
+  "summary": "Constellation Brands, Inc., together with its subsidiaries, produces, imports, markets, and sells beer, wine, and spirits in the United States, Canada, Mexico, New Zealand, and Italy. It offers beer under the Corona Extra, Corona Familiar, Corona Sunbrew, Corona Light, Corona Non-Alcoholic, Corona Premier, Modelo Especial, Modelo Chelada, Modelo Negra, Modelo Spiked Aguas Frescas, Modelo Oro, Mode",
+  "ret_1m": -8.9,
+  "ret_3m": -12.6,
+  "off_52w_high": -26.0,
+  "next_earnings": "2026-10-05",
   "headlines": [
    {
-    "date": "2026-09-08",
-    "title": "XPeng Beats Tesla With This Humanoid Robot Milestone",
-    "url": "https://www.investors.com/news/tesla-optimus-xpeng-iron-robot-china-ai-electric-vehicle/?src=A00220&yptr=yahoo"
+    "date": "2026-09-09",
+    "title": "Constellation Brands Stock: Is STZ Underperforming the Consumer Defensive Sector?",
+    "url": "https://www.barchart.com/story/news/4511628/constellation-brands-stock-is-stz-underperforming-the-consumer-defensive-sector"
+   },
+   {
+    "date": "2026-09-09",
+    "title": "Why Did NKE, MCD, STZ Stocks Slump To 52-Week Lows Today?",
+    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-nke-mcd-stz-stocks-slump-to-52-week-lows-today/cZteA3jRJyk"
    },
    {
     "date": "2026-09-08",
-    "title": "Wall Street Bulls Look Optimistic About XPeng (XPEV): Should You Buy?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bulls-look-optimistic-133003713.html"
+    "title": "Modelo hikes marketing spend on college football for new platform",
+    "url": "https://www.marketingdive.com/news/modelo-hikes-marketing-spend-on-college-football-for-new-platform/829785/"
    },
    {
-    "date": "2026-09-08",
-    "title": "XPEV Jumps In Hong Kong: Xpeng Flips The Switch On Humanoid Robot Mass Production \u2014 And Says Margins Could Beat EVs",
-    "url": "https://stocktwits.com/news-articles/markets/equity/xpev-jumps-in-hong-kong-xpeng-flips-the-switch-on-humanoid-robot-mass-production-and-says-margins-could-beat-e-vs/cZt3NgxRJxD"
+    "date": "2026-09-06",
+    "title": "Should you Avoid Constellation Brands Stock, Even at a 52-Week Low?",
+    "url": "https://www.fool.com/investing/2026/09/06/should-you-avoid-constellation-brands-stock/"
    },
    {
-    "date": "2026-09-03",
-    "title": "NIO After Q2 Earnings: Buy, Hold or Sell the Stock Now?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/nio-q2-earnings-buy-hold-152600580.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "Why Did PCG, NIO, XPEV Stocks Drop To 52-Week Lows Today?",
-    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-pcg-nio-xpev-stocks-drop-to-52-week-lows-today/cZsM0rnRJH1"
+    "date": "2026-09-04",
+    "title": "Premiumization and Strong Brands Fuel Constellation Brands' Growth",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/premiumization-strong-brands-fuel-constellation-170400930.html"
    },
    {
     "date": "2026-09-03",
-    "title": "XPeng (XPEV) Stock Looks Overvalued After a 72% Five Year Slump",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/xpeng-xpev-stock-looks-overvalued-002328681.html"
+    "title": "Mission Produce Q3 Earnings Coming Up: Here's What Lies Ahead",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/mission-produce-q3-earnings-coming-151800937.html"
    },
    {
-    "date": "2026-09-02",
-    "title": "Is XPeng (XPEV) Below Fair Value On August Deliveries And Robotaxi Progress?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/xpeng-xpev-below-fair-value-170757257.html"
+    "date": "2026-09-03",
+    "title": "Brown-Forman Q1 Earnings Meet, Sales Miss on Tequila & Barrel Weakness",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/brown-forman-q1-earnings-meet-144600348.html"
    },
    {
-    "date": "2026-09-02",
-    "title": "Nio Drops 4% on J.P. Morgan Downgrade and $4.50 Price Target, XPeng and Li Auto Slip",
-    "url": "https://247wallst.com/investing/2026/09/02/nio-drops-4-on-j-p-morgan-downgrade-and-4-50-price-target-xpeng-and-li-auto-slip/"
+    "date": "2026-09-03",
+    "title": "3 Value Stocks We Keep Off Our Radar",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/3-value-stocks-keep-off-010023767.html"
    }
   ],
-  "bucket": "FULL PASS"
+  "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
   "tv": "NYSE:RDY",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -2.5,
-  "ret_3m": -10.8,
-  "off_52w_high": -22.4,
+  "name": "Dr. Reddy's Laboratories Ltd",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - Specialty & Generic",
+  "mcap_b": 9.9,
+  "summary": "Dr. Reddy's Laboratories Limited, together with its subsidiaries, operates as an integrated pharmaceutical company North America, Europe, India, Russia, and internationally. The company operates through Global Generics, Pharmaceutical Services and Active Ingredients (PSAI), and Others segment. Its Global Generics segment manufactures and markets prescription and over-the-counter finished pharmaceu",
+  "ret_1m": -2.2,
+  "ret_3m": -10.5,
+  "off_52w_high": -22.2,
   "next_earnings": "2026-10-22",
   "headlines": [
    {
@@ -95,184 +95,243 @@
   "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
-  "tv": "NASDAQ:IRMD",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -7.3,
-  "ret_3m": -13.2,
-  "off_52w_high": -20.2,
-  "next_earnings": "2026-11-03",
+  "tv": "TSX:PBH",
+  "name": "PREMIUM BRANDS HOLDINGS CORPORA",
+  "sector": "Consumer Defensive",
+  "industry": "Packaged Foods",
+  "mcap_b": 4.0,
+  "summary": "Premium Brands Holdings Corporation manufactures and distributes food products under various brands Canada. The company operates in two segments, Specialty Foods and Premium Food Distribution. It provides processed meat, deli products, meat snacks, meatballs, beef jerky and halal, sandwiches, specialty and gourmet products, entrees, panini, wraps, subs, hamburgers, burgers, salads and kettle produ",
+  "ret_1m": -6.1,
+  "ret_3m": -8.9,
+  "off_52w_high": -25.3,
+  "next_earnings": "2026-11-10",
   "headlines": [],
   "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
-  "tv": "NYSE:MCD",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -6.1,
-  "ret_3m": -9.0,
-  "off_52w_high": -23.7,
-  "next_earnings": "2026-11-05",
+  "tv": "NYSE:CPNG",
+  "name": "Coupang, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Internet Retail",
+  "mcap_b": 26.5,
+  "summary": "Coupang, Inc., together with its subsidiaries, owns and operates retail business through its mobile applications and internet websites in South Korea and internationally. It operates through Product Commerce and Developing Offerings segments. The Product Commerce segment includes Korean retail and marketplace offerings; Rocket Fresh, a fresh grocery offering; and advertising products. The Developi",
+  "ret_1m": -8.8,
+  "ret_3m": -7.2,
+  "off_52w_high": -56.0,
+  "next_earnings": "2026-11-03",
   "headlines": [
    {
-    "date": "2026-09-09",
-    "title": "3 Cash-Producing Stocks Worth Investigating",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/3-cash-producing-stocks-worth-140238442.html"
-   },
-   {
-    "date": "2026-09-09",
-    "title": "Why Did NKE, MCD, STZ Stocks Slump To 52-Week Lows Today?",
-    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-nke-mcd-stz-stocks-slump-to-52-week-lows-today/cZteA3jRJyk"
-   },
-   {
-    "date": "2026-09-08",
-    "title": "5 Defensive Stocks to Watch as CPI and the Fed Put the Rally to the Test",
-    "url": "https://www.marketbeat.com/articles/5-defensive-stocks-to-watch-as-cpi-and-the-fed-put-the-rally-to-the-test/?utm_source=yahoofinance&utm_medium=yahoofinance"
-   },
-   {
-    "date": "2026-09-08",
-    "title": "Can MCD's Slower Expansion Pace Help Protect New-Restaurant Returns?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/mcds-slower-expansion-pace-help-131600463.html"
+    "date": "2026-09-07",
+    "title": "Chewy vs. Coupang: Which Consumer Stock Is a Better Buy in 2026?",
+    "url": "https://www.fool.com/coverage/better-buy/2026/09/07/chewy-vs-coupang-which-consumer-stock-is-a-better-buy-in-2026/"
    },
    {
     "date": "2026-09-07",
-    "title": "Why Franchise Models Are Winning the Restaurant Stock Divide",
-    "url": "https://www.marketbeat.com/articles/why-franchise-models-are-winning-the-restaurant-stock-divide/?utm_source=yahoofinance&utm_medium=yahoofinance"
+    "title": "Alibaba vs. Coupang: Which Asia Retail Powerhouse Stock Is a Better Buy in 2026?",
+    "url": "https://www.fool.com/coverage/better-buy/2026/09/07/alibaba-vs-coupang-which-asia-retail-powerhouse-stock-is-a-better-buy-in-2026/"
    },
    {
-    "date": "2026-09-06",
-    "title": "McDonald's (MCD) Exit From A 90% Restaurant Stake Still Haunts Investors",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/mcdonalds-mcd-exit-90-restaurant-181105022.html"
+    "date": "2026-09-04",
+    "title": "Coupang (CPNG) Stock Fair Value Falls As Analysts Weigh Growth Against Regulatory Risks",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-stock-fair-value-070650768.html"
    },
    {
-    "date": "2026-09-06",
-    "title": "McDonald\u2019s India Drama Erupts While Wall Street Targets 24% Stock Rally",
-    "url": "https://beincrypto.com/mcdonalds-india-drama-wall-street-rally/"
+    "date": "2026-09-03",
+    "title": "Coupang (CPNG) Stock Dropped, So What Is Driving Attention Now?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-stock-dropped-driving-224206587.html"
    },
    {
-    "date": "2026-09-06",
-    "title": "McDonald's Once Owned 90% Of A Popular Restaurant Chain. Selling It Left Billions On The Table",
-    "url": "https://www.moneydigest.com/2247570/mcdonalds-owned-popular-restaurant-chain-missed-billions-chipotle/"
+    "date": "2026-09-03",
+    "title": "What Coupang (CPNG)'s Privacy Fine and Margin Strains Mean For Shareholders",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-privacy-fine-margin-211046322.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Wall Street Bulls Look Optimistic About Coupang (CPNG): Should You Buy?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bulls-look-optimistic-133003930.html"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "Coupang (CPNG) Shares Drop 7.7% on Softer Q2 Guidance",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/coupang-cpng-shares-drop-7-132307692.html"
+   },
+   {
+    "date": "2026-08-28",
+    "title": "2 Stocks Down 26% and 68% to Buy Now and Hold for the Next Decade",
+    "url": "https://www.fool.com/investing/2026/08/28/2-stocks-down-26-and-68-to-buy-now-and-hold-for-th/"
    }
   ],
   "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
-  "tv": "NYSE:PL",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -24.8,
-  "ret_3m": -44.3,
-  "off_52w_high": -66.2,
-  "next_earnings": "2026-12-09",
+  "tv": "NASDAQ:ISRG",
+  "name": "Intuitive Surgical, Inc.",
+  "sector": "Healthcare",
+  "industry": "Medical Instruments & Supplies",
+  "mcap_b": 125.7,
+  "summary": "Intuitive Surgical, Inc. develops, manufactures, and markets products that enable physicians and healthcare providers to enhance the quality of and access to minimally invasive care in the United States and internationally. It offers the da Vinci Surgical System that enables surgical procedures using a minimally invasive approach; and Ion endoluminal system, which extends its commercial offerings ",
+  "ret_1m": -10.2,
+  "ret_3m": -17.2,
+  "off_52w_high": -40.4,
+  "next_earnings": "2026-10-20",
   "headlines": [
    {
     "date": "2026-09-09",
-    "title": "Planet Labs (PL) Reported 58% Revenue Growth. Can Backlog Conversion Sustain Profitability?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-reported-58-012242024.html"
+    "title": "How Much Can ISRG Stock Still Move Against You?",
+    "url": "https://www.trefis.com/articles/614702/how-much-can-isrg-stock-still-move-against-you/2026-09-09"
+   },
+   {
+    "date": "2026-09-09",
+    "title": "Brokers Suggest Investing in Intuitive Surgical (ISRG): Read This Before Placing a Bet",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/brokers-suggest-investing-intuitive-surgical-133004563.html"
+   },
+   {
+    "date": "2026-09-09",
+    "title": "ISRG Stock Trading at its Cheapest in 10 Years: Should You Buy Now?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/isrg-stock-trading-cheapest-10-125300557.html"
+   },
+   {
+    "date": "2026-09-09",
+    "title": "Wall Street Isn't Talking About High-Yield Medtronic Stock -- Here's Why It Should Be",
+    "url": "https://www.fool.com/investing/2026/09/09/wall-street-isnt-talking-about-high-yield-medtroni/"
    },
    {
     "date": "2026-09-08",
-    "title": "How Far Could RKLB Stock Fall In The Next Shock?",
-    "url": "https://www.trefis.com/articles/614529/how-far-could-rklb-stock-fall-in-the-next-shock/2026-09-08"
+    "title": "Here's Why Intuitive Surgical, Inc. (ISRG) Fell More Than Broader Market",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/heres-why-intuitive-surgical-inc-215001666.html"
    },
    {
     "date": "2026-09-08",
-    "title": "Grounded and Falling: Why One Wall Street Pro Says Rocket Lab Will More Than Double Soon",
-    "url": "https://247wallst.com/investing/2026/09/08/grounded-and-falling-why-one-wall-street-pro-says-rocket-lab-will-more-than-double-soon/"
+    "title": "The Zacks Analyst Blog Highlights FANUY, ABBNY, KYCCF, NVDA, ISRG, ILMN, NOVT, BOTZ, ROBO, ROBT and IBOT",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/zacks-analyst-blog-highlights-fanuy-141100603.html"
    },
    {
-    "date": "2026-09-06",
-    "title": "Planet Labs (PL) Lands 7 Figure European Defense Deal With A 1 Year Term",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/planet-labs-pl-lands-7-170555179.html"
+    "date": "2026-09-07",
+    "title": "ISRG's Ion Platform Is Quietly Becoming a Second Growth Engine",
+    "url": "https://finance.yahoo.com/healthcare/articles/isrgs-ion-platform-quietly-becoming-145100172.html"
    },
    {
-    "date": "2026-09-04",
-    "title": "PL Q2 Deep Dive: Strong Revenue Driven by Defense, Guidance Falls Short of Expectations",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/pl-q2-deep-dive-strong-231010882.html"
-   },
-   {
-    "date": "2026-09-04",
-    "title": "Stock Market Today, Sept. 4: Planet Labs Dips 1% Despite Earnings Beat, Full-Year Guidance Raise",
-    "url": "https://www.fool.com/coverage/stock-market-today/2026/09/04/stock-market-today-sept-4-planet-labs-dips-1-despite-earnings-beat-full-year-guidance-raise/"
-   },
-   {
-    "date": "2026-09-04",
-    "title": "How Putin\u2019s Space Failures Highlight SpaceX\u2019s Dominance",
-    "url": "https://www.barrons.com/articles/russia-satellite-failures-spacex-military-moat-ddaf09a5?siteid=yhoof2&yptr=yahoo"
-   },
-   {
-    "date": "2026-09-04",
-    "title": "AST SpaceMobile Stock Soared 12%\u2014This Was the Catalyst",
-    "url": "https://www.marketbeat.com/articles/ast-spacemobile-stock-soared-12this-was-the-catalyst/?utm_source=yahoofinance&utm_medium=yahoofinance"
+    "date": "2026-09-07",
+    "title": "Intuitive Surgical (ISRG): Embracing AI Innovations in Robotic Surgery for Future Growth",
+    "url": "https://finance.yahoo.com/technology/ai/articles/intuitive-surgical-isrg-embracing-ai-123044580.html"
    }
   ],
   "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
-  "tv": "NASDAQ:WB",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -16.8,
-  "ret_3m": -13.2,
-  "off_52w_high": -44.6,
-  "next_earnings": "2026-11-17",
+  "tv": "NASDAQ:WINA",
+  "name": "Winmark Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Specialty Retail",
+  "mcap_b": 1.1,
+  "summary": "Winmark Corporation, a resale company, operates as a franchisor in the United States and Canada. It is involved in the operation of Plato's Closet, which franchisees buy and sell gently used clothing and accessories for the teenage and young adult market; Once Upon A Child, which franchisees buy and sell gently used and, to a lesser extent, new children's clothing, toys, furniture, equipment, and ",
+  "ret_1m": -17.4,
+  "ret_3m": -19.4,
+  "off_52w_high": -37.8,
+  "next_earnings": "2026-10-14",
+  "headlines": [],
+  "bucket": "NEAR: 4h+band ok, weekly shallow"
+ },
+ {
+  "tv": "NASDAQ:ANIP",
+  "name": "ANI Pharmaceuticals, Inc.",
+  "sector": "Healthcare",
+  "industry": "Drug Manufacturers - Specialty & Generic",
+  "mcap_b": 1.6,
+  "summary": "ANI Pharmaceuticals, Inc., a biopharmaceutical company, develops, manufactures, and markets branded and generic pharmaceutical products in the United States and internationally. The company provides injectables, softgel capsules, and Cortrophin gel, as well as ILUVIEN and YUTIQ products. It also manufactures oral solid dose products, semi-solids, liquids, topicals, controlled substances, and poten",
+  "ret_1m": -6.7,
+  "ret_3m": -12.9,
+  "off_52w_high": -28.4,
+  "next_earnings": "2026-11-06",
   "headlines": [
    {
-    "date": "2026-08-27",
-    "title": "Weibo (WB) Is Down 6.0% After Q2 Revenue Rose But Earnings Slumped Sharply - Has The Bull Case Changed?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/weibo-wb-down-6-0-210803136.html"
+    "date": "2026-09-04",
+    "title": "ANI Pharmaceuticals (ANIP) Appoints Henry Gosebruch To Its Board",
+    "url": "https://finance.yahoo.com/healthcare/articles/ani-pharmaceuticals-anip-appoints-henry-221406297.html"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "2 Value Stocks on Our Watchlist and 1 We Find Risky",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/2-value-stocks-watchlist-1-105020821.html"
    },
    {
     "date": "2026-08-27",
-    "title": "Weibo (WB) Stock Still Looks Like A Bargain On An 81% Slump",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/weibo-wb-stock-still-looks-070847028.html"
+    "title": "2 Reasons to Like ANIP (and 1 Not So Much)",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/2-reasons-anip-1-not-234507474.html"
    },
    {
-    "date": "2026-08-26",
-    "title": "Weibo (WB) Q2 2026 Earnings Call Transcript",
-    "url": "https://www.fool.com/earnings/call-transcripts/2026/08/26/weibo-wb-q2-2026-earnings-call-transcript/"
+    "date": "2026-08-24",
+    "title": "1 Russell 2000 Stock to Target This Week and 2 We Brush Off",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/1-russell-2000-stock-target-151336393.html"
+   }
+  ],
+  "bucket": "NEAR: 4h+band ok, weekly shallow"
+ },
+ {
+  "tv": "NASDAQ:IONS",
+  "name": "Ionis Pharmaceuticals, Inc.",
+  "sector": "Healthcare",
+  "industry": "Biotechnology",
+  "mcap_b": 9.4,
+  "summary": "Ionis Pharmaceuticals, Inc., a commercial-stage biotechnology company, provides RNA-targeted medicines in the United States. The company offers TRYNGOLZA reduces triglyceride levels in adults with familial chylomicronemia syndrome (FCS) and acute pancreatitis; DAWNZERA for prophylaxis to prevent attacks of hereditary angioedema in adults; WAINUA for the treatment of the polyneuropathy of hereditar",
+  "ret_1m": -1.6,
+  "ret_3m": -24.9,
+  "off_52w_high": -35.2,
+  "next_earnings": "2026-11-04",
+  "headlines": [
+   {
+    "date": "2026-09-09",
+    "title": "Cathie Wood Is Loading Up on Ionis Pharmaceuticals (IONS) Stock. Here's the Bet She's Making.",
+    "url": "https://www.fool.com/investing/2026/09/09/cathie-wood-buy-ionis-pharmaceutical-ions-stock/"
    },
    {
-    "date": "2026-08-21",
-    "title": "Nvidia initiated, Teradyne downgraded: Wall Street's top analyst calls",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-initiated-teradyne-downgraded-wall-133824309.html"
+    "date": "2026-09-09",
+    "title": "Theravance Bio (TBPH) Up 0.8% Since Last Earnings Report: Can It Continue?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/theravance-bio-tbph-0-8-153007559.html"
    },
    {
-    "date": "2026-08-20",
-    "title": "NIO Stock Rises Overnight As \u2018Wagon King\u2019 Returns In Spy Shots, Chery Takes 10% Stake In Energy Unit",
-    "url": "https://stocktwits.com/news-articles/markets/equity/nio-wagon-king-spy-shots-chery-stake-energy-unit/cZYIX9MRJmE"
+    "date": "2026-09-08",
+    "title": "How Novartis' Double-Stacked Failures Reverberated Through Biopharma",
+    "url": "https://www.investors.com/news/technology/novartis-ionis-pharmaceuticals-heart-disease-dm1/?src=A00220&yptr=yahoo"
    },
    {
-    "date": "2026-08-19",
-    "title": "Weibo Corp (WB) (Q2 2026) Earnings Call Highlights: Navigating Ad Headwinds with AI-Driven Growth",
-    "url": "https://finance.yahoo.com/media-advertising/articles/weibo-corp-wb-q2-2026-190136863.html"
+    "date": "2026-09-08",
+    "title": "Novartis Stock Tanks Following Third Major Pipeline Setback",
+    "url": "https://www.barrons.com/articles/novartis-stock-price-drug-trial-failures-914e1bd1?siteid=yhoof2&yptr=yahoo"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "NVS Stock Clocks Worst Day In Over 20 Years After Second Trial Failure In A Week \u2014 DYN, SRPT Slip In Sympathy",
+    "url": "https://stocktwits.com/news-articles/markets/equity/nvs-stock-on-track-for-worst-day-in-over-20-years-after-second-trial-failure-in-a-week-dyn-srpt-slip-in-sympathy/cZtEeAyRJy2"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Novartis pelacarsen Lp(a) trial fails, raising doubts for Amgen, Lilly",
+    "url": "https://qz.com/novartis-pelacarsen-lpa-horizon-trial-failure-amgen-lilly-090826"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Novartis Stock Drops as Trial Failures Ripple Across Biotech Partners",
+    "url": "https://finance.yahoo.com/healthcare/articles/novartis-stock-drops-trial-failures-120113896.html"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Ionis Pharmaceuticals Shares Fall After Pelacarsen Phase 3 Trial Misses Primary Endpoint",
+    "url": "https://investorshub.advfn.com/market-news/article/35818/ionis-pharmaceuticals-shares-fall-after-pelacarsen-phase-3-trial-misses-primary-endpoint"
    }
   ],
   "bucket": "NEAR: 4h+band ok, weekly shallow"
  },
  {
   "tv": "NYSE:NIO",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -21.9,
-  "ret_3m": -28.7,
-  "off_52w_high": -52.3,
+  "name": "NIO Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap_b": 9.4,
+  "summary": "NIO Inc. designs, develops, manufactures, and sells smart electric vehicles in China, Europe, and internationally. It offers five and six-seater electric SUVs, as well as smart electric sedans. The company also offers power solutions, including Power Home, a home charging solution; Power Swap, a battery-swapping service; Power Charger and Destination Charger; Power Mobile, a mobile charging servic",
+  "ret_1m": -23.2,
+  "ret_3m": -29.9,
+  "off_52w_high": -53.1,
   "next_earnings": "2026-11-24",
   "headlines": [
    {
@@ -319,153 +378,15 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
-  "tv": "NYSE:HE",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -10.7,
-  "ret_3m": -22.5,
-  "off_52w_high": -39.0,
-  "next_earnings": "2026-11-13",
-  "headlines": [],
-  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
- },
- {
-  "tv": "NYSE:TKC",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -4.1,
-  "ret_3m": -7.5,
-  "off_52w_high": -26.2,
-  "next_earnings": "2026-11-12",
-  "headlines": [],
-  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
- },
- {
-  "tv": "NYSE:TXT",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -10.2,
-  "ret_3m": -14.2,
-  "off_52w_high": -20.5,
-  "next_earnings": "2026-10-22",
-  "headlines": [
-   {
-    "date": "2026-09-04",
-    "title": "Textron (TXT) Names A New Aviation Chief, Is The 23% Discount Warranted?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/textron-txt-names-aviation-chief-111157771.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "Textron (TXT): Buy, Sell, or Hold Post Q2 Earnings?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/textron-txt-buy-sell-hold-171118458.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "Howmet's Transportation Market Under Pressure: Is the Risk Priced In?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/howmets-transportation-market-under-pressure-152800724.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "This Aerospace Stock Is Cheap, but Does That Make It a Buy Today?",
-    "url": "https://www.fool.com/investing/2026/09/03/aerospace-stock-cheap-make-buy-textron-txt/"
-   },
-   {
-    "date": "2026-09-02",
-    "title": "1 Mid-Cap Stock for Long-Term Investors and 2 That Underwhelm",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/1-mid-cap-stock-long-222823265.html"
-   },
-   {
-    "date": "2026-09-01",
-    "title": "Aerospace Stocks Q2 In Review: Textron (NYSE:TXT) Vs Peers",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/aerospace-stocks-q2-review-textron-173020613.html"
-   },
-   {
-    "date": "2026-08-27",
-    "title": "Can GE Aerospace Boost Profit Margin Amid Cost Pressures?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/ge-aerospace-boost-profit-margin-162100571.html"
-   },
-   {
-    "date": "2026-08-27",
-    "title": "Why Is Textron (TXT) Down 2.7% Since Last Earnings Report?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/why-textron-txt-down-2-153023432.html"
-   }
-  ],
-  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
- },
- {
-  "tv": "NYSE:DECK",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -16.5,
-  "ret_3m": -27.7,
-  "off_52w_high": -32.7,
-  "next_earnings": "2026-10-22",
-  "headlines": [
-   {
-    "date": "2026-09-09",
-    "title": "BMO cautious on softlines, bearish on athletic names",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/bmo-cautious-softlines-bearish-athletic-144804412.html"
-   },
-   {
-    "date": "2026-09-08",
-    "title": "Nike Is In Free Fall: This Wall Street Ratings Agency Says It\u2019s Doubling Soon",
-    "url": "https://247wallst.com/investing/2026/09/08/nike-is-in-free-fall-this-wall-street-ratings-agency-says-its-doubling-soon/"
-   },
-   {
-    "date": "2026-09-07",
-    "title": "On Holding's Robust APAC Performance Strengthens Its Global Footprint",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/holdings-robust-apac-performance-strengthens-152200053.html"
-   },
-   {
-    "date": "2026-09-04",
-    "title": "Deckers (DECK) Gains As Market Dips: What You Should Know",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/deckers-deck-gains-market-dips-215001753.html"
-   },
-   {
-    "date": "2026-09-04",
-    "title": "Stock Market Today, Sept. 4: Lululemon Plummets 17% After Slashing Guidance",
-    "url": "https://www.fool.com/coverage/stock-market-today/2026/09/04/stock-market-today-sept-4-lululemon-plummets-17-after-slashing-guidance/"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "Is ONON Worth Buying Now as Growth Collides With Execution Risks?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-worth-buying-now-growth-145900784.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "ONON Falls 27.2% in a Month. Does the Sell-Off Create Opportunity?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-falls-27-2-month-145600575.html"
-   },
-   {
-    "date": "2026-09-03",
-    "title": "Can ONON's Higher 2026 Margin Outlook Offset Tariff and Sales Risks?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/onons-higher-2026-margin-outlook-135400770.html"
-   }
-  ],
-  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
- },
- {
   "tv": "NYSE:ROL",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -7.3,
-  "ret_3m": -27.1,
-  "off_52w_high": -46.8,
+  "name": "Rollins, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Personal Services",
+  "mcap_b": 16.6,
+  "summary": "Rollins, Inc., through its subsidiaries, provides pest and wildlife control services and protection to residential and commercial customers in the United States and internationally. The company offers pest control services to residential properties protecting from common pests, including rodents, insects, and wildlife. It also provides workplace pest control solutions for customers across various ",
+  "ret_1m": -7.2,
+  "ret_3m": -27.0,
+  "off_52w_high": -46.7,
   "next_earnings": "2026-10-28",
   "headlines": [
    {
@@ -497,70 +418,15 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
-  "tv": "NASDAQ:OPEN",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -12.9,
-  "ret_3m": -30.2,
-  "off_52w_high": -71.2,
-  "next_earnings": "2026-11-05",
-  "headlines": [
-   {
-    "date": "2026-09-08",
-    "title": "OPEN Stock Has Lost 46% Since New CEO Took Over Nearly A Year Ago \u2014 Now He Admits He Hasn\u2019t Moved Fast Enough",
-    "url": "https://stocktwits.com/news-articles/markets/equity/open-stock-has-lost-46-since-new-ceo-took-over-nearly-a-year-ago-now-he-admits-he-hasn-t-moved-fast-enough/cZt3pAaRJUP"
-   },
-   {
-    "date": "2026-09-02",
-    "title": "Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?",
-    "url": "https://247wallst.com/investing/2026/09/02/offerpad-rallies-7-opendoor-edges-higher-is-rate-relief-reaching-the-ibuyers/"
-   },
-   {
-    "date": "2026-09-01",
-    "title": "Should You Avoid Opendoor Stock, Even at a 52-Week Low?",
-    "url": "https://www.fool.com/investing/2026/09/01/should-you-avoid-opendoor-stock-52-week-low/"
-   },
-   {
-    "date": "2026-09-01",
-    "title": "Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?",
-    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-nio-open-aptv-stocks-drop-to-52-week-lows-today/cZsodv0RJtJ"
-   },
-   {
-    "date": "2026-08-31",
-    "title": "Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?",
-    "url": "https://247wallst.com/investing/2026/08/31/opendoor-sinks-4-on-modest-market-pullback-is-high-beta-selling-the-whole-story/"
-   },
-   {
-    "date": "2026-08-27",
-    "title": "Can OPEN Reach Adjusted Net Income Breakeven at $9B Revenue Run Rate?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/open-reach-adjusted-net-income-145400782.html"
-   },
-   {
-    "date": "2026-08-24",
-    "title": "Opendoor vs. Zillow: Which Real Estate Stock is the Better Buy?",
-    "url": "https://finance.yahoo.com/real-estate/articles/opendoor-vs-zillow-real-estate-153900545.html"
-   },
-   {
-    "date": "2026-08-21",
-    "title": "3 Small-Cap Stocks with Open Questions",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/3-small-cap-stocks-open-164347646.html"
-   }
-  ],
-  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
- },
- {
   "tv": "NYSE:PNR",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -13.6,
-  "ret_3m": -22.3,
-  "off_52w_high": -48.2,
+  "name": "Pentair plc.",
+  "sector": "Industrials",
+  "industry": "Specialty Industrial Machinery",
+  "mcap_b": 9.2,
+  "summary": "Pentair plc provides various water solutions in the United States, Western Europe, China, Latin America, the Middle East, Southeast Asia, Australia, and Canada. It operates through three segments: Flow, Water Solutions, and Pool. The Flow segment designs, manufactures, and sells fluid treatment and pump products and systems, including pressure vessels, gas recovery solutions, membrane bioreactors,",
+  "ret_1m": -13.8,
+  "ret_3m": -22.5,
+  "off_52w_high": -48.3,
   "next_earnings": "2026-10-20",
   "headlines": [
    {
@@ -577,15 +443,29 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
+  "tv": "NYSE:HE",
+  "name": "Hawaiian Electric Industries, I",
+  "sector": "Utilities",
+  "industry": "Utilities - Regulated Electric",
+  "mcap_b": 1.8,
+  "summary": "Hawaiian Electric Industries, Inc. together with its subsidiaries, engages in the electric utility business. The company engages in the production, purchase, transmission, distribution, and sale of electricity in the islands of Oahu; Hawaii; and Maui, Lanai, and Molokai; and renewable energy sources and potential sources include wind, solar, photovoltaic, geothermal, wave, hydroelectric, municipal",
+  "ret_1m": -11.6,
+  "ret_3m": -23.2,
+  "off_52w_high": -39.5,
+  "next_earnings": "2026-11-13",
+  "headlines": [],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
   "tv": "NYSE:LHX",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -12.4,
-  "ret_3m": -17.6,
-  "off_52w_high": -32.4,
+  "name": "L3Harris Technologies, Inc.",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "mcap_b": 47.1,
+  "summary": "L3Harris Technologies, Inc. provides mission-critical solutions for government and commercial customers worldwide. It operates through three segments: Space & Mission Systems (SMS), Communications & Spectrum Dominance (CSD), and Missile Solutions (MSL). The SMS segment integrates satellite and payload capabilities, including missile warning and defense, with maritime, air special missions, and oth",
+  "ret_1m": -13.2,
+  "ret_3m": -18.4,
+  "off_52w_high": -33.0,
   "next_earnings": "2026-10-29",
   "headlines": [
    {
@@ -632,29 +512,153 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
-  "tv": "NYSE:BBUC",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -6.9,
-  "ret_3m": -17.5,
-  "off_52w_high": -28.6,
-  "next_earnings": "2026-11-05",
+  "tv": "NYSE:TXT",
+  "name": "Textron Inc.",
+  "sector": "Industrials",
+  "industry": "Aerospace & Defense",
+  "mcap_b": 13.6,
+  "summary": "Textron Inc. operates in the aircraft, defense, industrial, and finance businesses worldwide. It operates in six segments: Textron Aviation, Bell, Textron Systems, Industrial, Textron eAviation, and Finance. The Textron Aviation segment manufactures, sells, and services business jets, turboprop and piston engine aircraft, and military trainer and defense aircraft, as well as offers maintenance, in",
+  "ret_1m": -10.4,
+  "ret_3m": -14.3,
+  "off_52w_high": -20.7,
+  "next_earnings": "2026-10-22",
+  "headlines": [
+   {
+    "date": "2026-09-04",
+    "title": "Textron (TXT) Names A New Aviation Chief, Is The 23% Discount Warranted?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/textron-txt-names-aviation-chief-111157771.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Textron (TXT): Buy, Sell, or Hold Post Q2 Earnings?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/textron-txt-buy-sell-hold-171118458.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Howmet's Transportation Market Under Pressure: Is the Risk Priced In?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/howmets-transportation-market-under-pressure-152800724.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "This Aerospace Stock Is Cheap, but Does That Make It a Buy Today?",
+    "url": "https://www.fool.com/investing/2026/09/03/aerospace-stock-cheap-make-buy-textron-txt/"
+   },
+   {
+    "date": "2026-09-02",
+    "title": "1 Mid-Cap Stock for Long-Term Investors and 2 That Underwhelm",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/1-mid-cap-stock-long-222823265.html"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "Aerospace Stocks Q2 In Review: Textron (NYSE:TXT) Vs Peers",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/aerospace-stocks-q2-review-textron-173020613.html"
+   },
+   {
+    "date": "2026-08-27",
+    "title": "Can GE Aerospace Boost Profit Margin Amid Cost Pressures?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/ge-aerospace-boost-profit-margin-162100571.html"
+   },
+   {
+    "date": "2026-08-27",
+    "title": "Why Is Textron (TXT) Down 2.7% Since Last Earnings Report?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/why-textron-txt-down-2-153023432.html"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "TSX:T",
+  "name": "TELUS CORPORATION",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap_b": 20.7,
+  "summary": "TELUS Corporation, together with its subsidiaries, operates as a telecommunications company in Canada and internationally. It operates through TELUS Technology Solutions, TELUS Health, and TELUS Digital Experience segments. The company offer technology solutions comprising mobile and fixed voice and data telecommunications services and products; and agriculture and consumer goods services, such as",
+  "ret_1m": -2.2,
+  "ret_3m": -21.6,
+  "off_52w_high": -37.1,
+  "next_earnings": "2026-11-06",
   "headlines": [],
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
+  "tv": "NYSE:TKC",
+  "name": "Turkcell Iletisim Hizmetleri AS",
+  "sector": "Communication Services",
+  "industry": "Telecom Services",
+  "mcap_b": 4.6,
+  "summary": "Turkcell Iletisim Hizmetleri A.S., together with its subsidiaries, engages in establishing and operating a global system for mobile communications (GSM) network in Turkey, Belarus, Turkish Republic of Northern Cyprus, Germany, and the Netherlands. It operates through the Turkcell Turkiye, Turkcell International, and Techfin segments. The company is involved in information technology, value added G",
+  "ret_1m": -4.2,
+  "ret_3m": -7.5,
+  "off_52w_high": -26.3,
+  "next_earnings": "2026-11-12",
+  "headlines": [],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "NYSE:XPEV",
+  "name": "XPeng Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Auto Manufacturers",
+  "mcap_b": 10.2,
+  "summary": "XPeng Inc. operates as a physical AI company. It has developed a Physical AI architecture covering Turing AI chips, foundation models, and integrated software and hardware applications. The company's products include smart EVs, robotaxis, and humanoid robots. XPeng Inc. was founded in 2015 and is headquartered in Guangzhou, the People's Republic of China.",
+  "ret_1m": -11.9,
+  "ret_3m": -31.7,
+  "off_52w_high": -62.3,
+  "next_earnings": "2026-11-16",
+  "headlines": [
+   {
+    "date": "2026-09-08",
+    "title": "XPeng Beats Tesla With This Humanoid Robot Milestone",
+    "url": "https://www.investors.com/news/tesla-optimus-xpeng-iron-robot-china-ai-electric-vehicle/?src=A00220&yptr=yahoo"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Wall Street Bulls Look Optimistic About XPeng (XPEV): Should You Buy?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/wall-street-bulls-look-optimistic-133003713.html"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "XPEV Jumps In Hong Kong: Xpeng Flips The Switch On Humanoid Robot Mass Production \u2014 And Says Margins Could Beat EVs",
+    "url": "https://stocktwits.com/news-articles/markets/equity/xpev-jumps-in-hong-kong-xpeng-flips-the-switch-on-humanoid-robot-mass-production-and-says-margins-could-beat-e-vs/cZt3NgxRJxD"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "NIO After Q2 Earnings: Buy, Hold or Sell the Stock Now?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/nio-q2-earnings-buy-hold-152600580.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Why Did PCG, NIO, XPEV Stocks Drop To 52-Week Lows Today?",
+    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-pcg-nio-xpev-stocks-drop-to-52-week-lows-today/cZsM0rnRJH1"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "XPeng (XPEV) Stock Looks Overvalued After a 72% Five Year Slump",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/xpeng-xpev-stock-looks-overvalued-002328681.html"
+   },
+   {
+    "date": "2026-09-02",
+    "title": "Is XPeng (XPEV) Below Fair Value On August Deliveries And Robotaxi Progress?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/xpeng-xpev-below-fair-value-170757257.html"
+   },
+   {
+    "date": "2026-09-02",
+    "title": "Nio Drops 4% on J.P. Morgan Downgrade and $4.50 Price Target, XPeng and Li Auto Slip",
+    "url": "https://247wallst.com/investing/2026/09/02/nio-drops-4-on-j-p-morgan-downgrade-and-4-50-price-target-xpeng-and-li-auto-slip/"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
   "tv": "NYSE:MLM",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -7.3,
-  "ret_3m": -10.9,
-  "off_52w_high": -27.8,
+  "name": "Martin Marietta Materials, Inc.",
+  "sector": "Basic Materials",
+  "industry": "Building Materials",
+  "mcap_b": 36.1,
+  "summary": "Martin Marietta Materials, Inc., a natural resource-based building materials company, supplies aggregates and heavy-side building materials to the construction industry in the United States and internationally. It operates through East Group and West Group segments. The company offers crushed stone, sand, and gravel products; ready mixed concrete and asphalt; and paving products and services for u",
+  "ret_1m": -8.3,
+  "ret_3m": -12.0,
+  "off_52w_high": -28.7,
   "next_earnings": "2026-11-03",
   "headlines": [
    {
@@ -701,15 +705,164 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
+  "tv": "NYSE:DECK",
+  "name": "Deckers Outdoor Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Footwear & Accessories",
+  "mcap_b": 11.1,
+  "summary": "Deckers Outdoor Corporation, together with its subsidiaries, designs, markets, and distributes footwear, apparel, and accessories for casual lifestyle use and high-performance activities in the United States and internationally. The company offers footwear, apparel, and accessories under the UGG brand; footwear, such as running, trail, hiking, fitness, and lifestyle shoes, as well as apparel and a",
+  "ret_1m": -17.7,
+  "ret_3m": -28.7,
+  "off_52w_high": -33.7,
+  "next_earnings": "2026-10-22",
+  "headlines": [
+   {
+    "date": "2026-09-09",
+    "title": "BMO cautious on softlines, bearish on athletic names",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/bmo-cautious-softlines-bearish-athletic-144804412.html"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Nike Is In Free Fall: This Wall Street Ratings Agency Says It\u2019s Doubling Soon",
+    "url": "https://247wallst.com/investing/2026/09/08/nike-is-in-free-fall-this-wall-street-ratings-agency-says-its-doubling-soon/"
+   },
+   {
+    "date": "2026-09-07",
+    "title": "On Holding's Robust APAC Performance Strengthens Its Global Footprint",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/holdings-robust-apac-performance-strengthens-152200053.html"
+   },
+   {
+    "date": "2026-09-04",
+    "title": "Deckers (DECK) Gains As Market Dips: What You Should Know",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/deckers-deck-gains-market-dips-215001753.html"
+   },
+   {
+    "date": "2026-09-04",
+    "title": "Stock Market Today, Sept. 4: Lululemon Plummets 17% After Slashing Guidance",
+    "url": "https://www.fool.com/coverage/stock-market-today/2026/09/04/stock-market-today-sept-4-lululemon-plummets-17-after-slashing-guidance/"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Is ONON Worth Buying Now as Growth Collides With Execution Risks?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-worth-buying-now-growth-145900784.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "ONON Falls 27.2% in a Month. Does the Sell-Off Create Opportunity?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-falls-27-2-month-145600575.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Can ONON's Higher 2026 Margin Outlook Offset Tariff and Sales Risks?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onons-higher-2026-margin-outlook-135400770.html"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "NYSE:MPT",
+  "name": "Medical Properties Trust, Inc.",
+  "sector": "Real Estate",
+  "industry": "REIT - Healthcare Facilities",
+  "mcap_b": 2.3,
+  "summary": "Medical Properties Trust, Inc. is a self-advised real estate investment trust formed in 2003 to acquire and develop net-leased hospital facilities. From its inception, the Company has grown to become one of the world's largest owners of hospital real estate with 378 facilities and approximately 38,000 licensed beds in nine countries and across three continents as of March 31, 2026. MPT's financing",
+  "ret_1m": -6.0,
+  "ret_3m": -21.1,
+  "off_52w_high": -32.7,
+  "next_earnings": "2026-10-29",
+  "headlines": [],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "NYSE:OI",
+  "name": "O-I Glass, Inc.",
+  "sector": "Consumer Cyclical",
+  "industry": "Packaging & Containers",
+  "mcap_b": 1.0,
+  "summary": "O-I Glass, Inc., through its subsidiaries, manufactures and sells glass containers to food and beverage manufacturers in the Americas, Europe, and internationally. The company produces glass containers for alcoholic beverages, including beer, flavored malt beverages, spirits, and wine. It is also involved in the production of glass packaging for various food items, soft drinks, teas, juices, and p",
+  "ret_1m": -5.3,
+  "ret_3m": -20.3,
+  "off_52w_high": -60.1,
+  "next_earnings": "2026-10-27",
+  "headlines": [
+   {
+    "date": "2026-08-21",
+    "title": "Nvidia initiated, Teradyne downgraded: Wall Street's top analyst calls",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/nvidia-initiated-teradyne-downgraded-wall-133824309.html"
+   },
+   {
+    "date": "2026-08-21",
+    "title": "Premarket movers: Crypto stocks rally, Ross Stores jump on upbeat forecast",
+    "url": "https://finance.yahoo.com/markets/crypto/articles/premarket-movers-crypto-stocks-rally-114620552.html"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "NYSE:ONON",
+  "name": "On Holding AG",
+  "sector": "Consumer Cyclical",
+  "industry": "Footwear & Accessories",
+  "mcap_b": 9.1,
+  "summary": "On Holding AG, together with its subsidiaries, develops and distributes performance sports products under the On brand in Switzerland, the rest of Europe, the Middle East, Africa, the United States, the rest of the Americas, and the Asia-Pacific. The company offers athletic footwear, apparel, and accessories for performance running, performance outdoor, performance all day, performance training, p",
+  "ret_1m": -30.8,
+  "ret_3m": -29.8,
+  "off_52w_high": -47.0,
+  "next_earnings": "2026-11-11",
+  "headlines": [
+   {
+    "date": "2026-09-09",
+    "title": "On Holding AG (ONON) is Attracting Investor Attention: Here is What You Should Know",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/holding-ag-onon-attracting-investor-130005284.html"
+   },
+   {
+    "date": "2026-09-08",
+    "title": "Nike Is In Free Fall: This Wall Street Ratings Agency Says It\u2019s Doubling Soon",
+    "url": "https://247wallst.com/investing/2026/09/08/nike-is-in-free-fall-this-wall-street-ratings-agency-says-its-doubling-soon/"
+   },
+   {
+    "date": "2026-09-07",
+    "title": "Wall Street Is Underestimating This Stock. Here's My Case for Why It Could Triple in 7 Years.",
+    "url": "https://www.fool.com/investing/2026/09/07/wall-street-is-underestimating-this-stock-heres-my/"
+   },
+   {
+    "date": "2026-09-07",
+    "title": "On Holding's Robust APAC Performance Strengthens Its Global Footprint",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/holdings-robust-apac-performance-strengthens-152200053.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Is ONON Worth Buying Now as Growth Collides With Execution Risks?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-worth-buying-now-growth-145900784.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "ONON Falls 27.2% in a Month. Does the Sell-Off Create Opportunity?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onon-falls-27-2-month-145600575.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Can ONON's Higher 2026 Margin Outlook Offset Tariff and Sales Risks?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/onons-higher-2026-margin-outlook-135400770.html"
+   },
+   {
+    "date": "2026-09-02",
+    "title": "On Holding (ONON) Stock Still Looks Like A Bargain Despite A 41% Slump",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/holding-onon-stock-still-looks-001829636.html"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
   "tv": "NYSE:VFC",
-  "name": null,
-  "sector": null,
-  "industry": null,
-  "mcap_b": 0.0,
-  "summary": "",
-  "ret_1m": -12.8,
-  "ret_3m": -23.2,
-  "off_52w_high": -39.4,
+  "name": "V.F. Corporation",
+  "sector": "Consumer Cyclical",
+  "industry": "Apparel Manufacturing",
+  "mcap_b": 5.1,
+  "summary": "V.F. Corporation, together with its subsidiaries, offers branded apparel, footwear, and accessories for men, women, and children in the Americas, Europe, and the Asia-Pacific. The company operates through two segments: Outdoor and Active. The company provides outdoor apparel, footwear, equipment, accessories; and style-forward and weather-ready footwear, apparel, and accessories under the Timberla",
+  "ret_1m": -13.4,
+  "ret_3m": -23.7,
+  "off_52w_high": -39.8,
   "next_earnings": "2026-10-26",
   "headlines": [
    {
@@ -756,15 +909,110 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
+  "tv": "NYSE:VICI",
+  "name": "VICI Properties Inc.",
+  "sector": "Real Estate",
+  "industry": "REIT - Diversified",
+  "mcap_b": 27.9,
+  "summary": "VICI Properties Inc. is an S&P 500 experiential real estate investment trust that owns one of the largest portfolios of market-leading gaming, hospitality, wellness, entertainment and leisure destinations, including Caesars Palace Las Vegas, MGM Grand and the Venetian Resort Las Vegas, three of the most iconic entertainment facilities on the Las Vegas Strip. VICI Properties owns 103 experiential a",
+  "ret_1m": -3.3,
+  "ret_3m": -8.5,
+  "off_52w_high": -19.6,
+  "next_earnings": "2026-10-29",
+  "headlines": [
+   {
+    "date": "2026-09-09",
+    "title": "Passive Income Investors Are Buying 5 Well-Known High-Yield Stocks Near 52-Week Lows",
+    "url": "https://247wallst.com/investing/2026/09/09/passive-income-investors-are-buying-5-well-known-high-yield-stocks-near-52-week-lows/"
+   },
+   {
+    "date": "2026-09-06",
+    "title": "This Stock Has the Highest Dividend Yield in the S&P 500. It Just Raised Its Dividend Again.",
+    "url": "https://www.fool.com/investing/2026/09/06/this-stock-has-the-highest-dividend-yield-in-the-s/"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "Billionaire Portfolios: Top 2 Real Estate Stocks With High Dividend Yields",
+    "url": "https://finance.yahoo.com/real-estate/articles/billionaire-portfolios-top-2-real-155623278.html"
+   },
+   {
+    "date": "2026-09-03",
+    "title": "70% of This High-Yield Dividend Stock's Income Comes From Just 2 Companies. Here's Why I'm Not Worried.",
+    "url": "https://www.fool.com/investing/2026/09/03/70-of-this-high-yield-dividend-stocks-income-comes/"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "This High-Yield REIT ETF Comes With a Big Catch\u20143 Stocks to Own Instead",
+    "url": "https://247wallst.com/investing/2026/09/01/this-high-yield-reit-etf-comes-with-a-big-catch-3-stocks-to-own-instead/"
+   },
+   {
+    "date": "2026-08-30",
+    "title": "Trump Real Estate Stock Trades Show June Net Selling",
+    "url": "https://www.credaily.com/briefs/trump-real-estate-stock-trades-show-june-net-selling/"
+   },
+   {
+    "date": "2026-08-29",
+    "title": "VICI Properties (VICI) Stock May Still Look Cheap As Rental Growth Holds",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/vici-properties-vici-stock-may-030817378.html"
+   },
+   {
+    "date": "2026-08-28",
+    "title": "Why Is VICI Properties (VICI) Down 2.1% Since Last Earnings Report?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/why-vici-properties-vici-down-153032929.html"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
+  "tv": "NASDAQ:GLPI",
+  "name": "Gaming and Leisure Properties, ",
+  "sector": "Real Estate",
+  "industry": "REIT - Specialty",
+  "mcap_b": 12.4,
+  "summary": "Gaming and Leisure Properties, Inc. is engaged in the business of acquiring, financing, and owning real estate property to be leased to gaming operators in triple-net lease arrangements, pursuant to which the tenant is responsible for all facility maintenance, insurance required in connection with the leased properties and the business conducted on the leased properties, taxes levied on or with re",
+  "ret_1m": -3.1,
+  "ret_3m": -11.7,
+  "off_52w_high": -13.9,
+  "next_earnings": "2026-10-29",
+  "headlines": [
+   {
+    "date": "2026-09-03",
+    "title": "Billionaire Portfolios: Top 2 Real Estate Stocks With High Dividend Yields",
+    "url": "https://finance.yahoo.com/real-estate/articles/billionaire-portfolios-top-2-real-155623278.html"
+   },
+   {
+    "date": "2026-08-29",
+    "title": "Gaming And Leisure Properties (GLPI) Stock Could Be Below Fair Value Following Tenant Financing Concerns",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/gaming-leisure-properties-glpi-stock-021502070.html"
+   },
+   {
+    "date": "2026-08-29",
+    "title": "Gaming And Leisure Properties (GLPI) Could Be 57% Undervalued As Valuation Questions Build",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/gaming-leisure-properties-glpi-could-010729223.html"
+   },
+   {
+    "date": "2026-08-27",
+    "title": "GLPI vs. OHI: Which Stock Is the Better Value Option?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/glpi-vs-ohi-stock-better-154003318.html"
+   },
+   {
+    "date": "2026-08-27",
+    "title": "3 High-Yield Dividend Stocks Near Their 52-Week Lows That Income Investors Are Sleeping On",
+    "url": "https://www.fool.com/investing/2026/08/27/3-high-yield-dividend-stocks-near-52-week-lows/"
+   }
+  ],
+  "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
+ },
+ {
   "tv": "NYSE:AMRZ",
   "name": "Amrize Ltd",
-  "sector": null,
-  "industry": null,
+  "sector": "Basic Materials",
+  "industry": "Building Materials",
   "mcap_b": 22.6,
-  "summary": "",
-  "ret_1m": -10.3,
-  "ret_3m": -21.2,
-  "off_52w_high": -36.4,
+  "summary": "Amrize AG engages in the provision of various building solutions for infrastructure, commercial, and residential construction markets in North America and Canada. It operates through two segments, Building Materials and Building Envelope. The Building Materials segment offers cement and aggregates, as well as ready-mix concrete, asphalt, and other construction materials. The Building Envelope segm",
+  "ret_1m": -11.3,
+  "ret_3m": -22.1,
+  "off_52w_high": -37.0,
   "next_earnings": "2026-10-27",
   "headlines": [
    {
@@ -806,51 +1054,56 @@
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
  },
  {
-  "tv": "NYSE:YSS",
-  "name": "York Space Systems Inc.",
-  "sector": "Industrials",
-  "industry": "Aerospace & Defense",
-  "mcap_b": 1.2,
-  "summary": "York Space Systems, Inc. operates as a space and defense prime providing a comprehensive suite of mission-critical solutions for national security, government and commercial customers in the United States. It provides space and defense primes with proprietary hardware and software capabilities designed to address customers' requirements across the elements of the space ecosystem throughout the mis",
-  "ret_1m": -19.0,
-  "ret_3m": -69.3,
-  "off_52w_high": -80.5,
-  "next_earnings": "2026-11-12",
+  "tv": "NASDAQ:OPEN",
+  "name": "Opendoor Technologies Inc",
+  "sector": "Real Estate",
+  "industry": "Real Estate Services",
+  "mcap_b": 2.9,
+  "summary": "Opendoor Technologies Inc. operates a digital platform for residential real estate transactions in the United States. It buys and sells homes through online e-commerce platform. The company also resells the home to a home buyer. In addition, it offers real estate brokerage, title insurance and settlement, and escrow services, as well as property and casualty insurance, real estate licenses, and co",
+  "ret_1m": -13.8,
+  "ret_3m": -30.9,
+  "off_52w_high": -71.5,
+  "next_earnings": "2026-11-05",
   "headlines": [
    {
+    "date": "2026-09-08",
+    "title": "OPEN Stock Has Lost 46% Since New CEO Took Over Nearly A Year Ago \u2014 Now He Admits He Hasn\u2019t Moved Fast Enough",
+    "url": "https://stocktwits.com/news-articles/markets/equity/open-stock-has-lost-46-since-new-ceo-took-over-nearly-a-year-ago-now-he-admits-he-hasn-t-moved-fast-enough/cZt3pAaRJUP"
+   },
+   {
+    "date": "2026-09-02",
+    "title": "Offerpad Rallies 7%, Opendoor Edges Higher: Is Rate Relief Reaching the iBuyers?",
+    "url": "https://247wallst.com/investing/2026/09/02/offerpad-rallies-7-opendoor-edges-higher-is-rate-relief-reaching-the-ibuyers/"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "Should You Avoid Opendoor Stock, Even at a 52-Week Low?",
+    "url": "https://www.fool.com/investing/2026/09/01/should-you-avoid-opendoor-stock-52-week-low/"
+   },
+   {
+    "date": "2026-09-01",
+    "title": "Why Did NIO, OPEN, APTV Stocks Drop To 52-Week Lows Today?",
+    "url": "https://stocktwits.com/news-articles/markets/equity/why-did-nio-open-aptv-stocks-drop-to-52-week-lows-today/cZsodv0RJtJ"
+   },
+   {
+    "date": "2026-08-31",
+    "title": "Opendoor Sinks 4% on Modest Market Pullback: Is High-Beta Selling the Whole Story?",
+    "url": "https://247wallst.com/investing/2026/08/31/opendoor-sinks-4-on-modest-market-pullback-is-high-beta-selling-the-whole-story/"
+   },
+   {
     "date": "2026-08-27",
-    "title": "York Space Systems (YSS) Cuts Guidance While Backlog Keeps Climbing",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/york-space-systems-yss-cuts-193131941.html"
-   },
-   {
-    "date": "2026-08-25",
-    "title": "YSS Stock Is Falling Despite Space Force Win \u2014 Goldman Sachs Just Slashed Its Price Target By 50%",
-    "url": "https://stocktwits.com/news-articles/markets/equity/yss-stock-is-falling-despite-space-force-win-goldman-sachs-slashed-its-price-target-by-50-percent/cZYkwOaRJoB"
-   },
-   {
-    "date": "2026-08-25",
-    "title": "York Space Systems Stock Falls After Goldman Sachs Slashes Target Price",
-    "url": "https://www.barrons.com/articles/york-space-systems-stock-goldman-sachs-dc5251cb?siteid=yhoof2&yptr=yahoo"
-   },
-   {
-    "date": "2026-08-25",
-    "title": "York Space Systems (YSS) Stock Could Be A Bargain On Cash Flow But Rich On Sales",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/york-space-systems-yss-stock-043343845.html"
+    "title": "Can OPEN Reach Adjusted Net Income Breakeven at $9B Revenue Run Rate?",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/open-reach-adjusted-net-income-145400782.html"
    },
    {
     "date": "2026-08-24",
-    "title": "York Space Systems (YSS) Wins NITE STAR Role, Is The Upside Already Priced In?",
-    "url": "https://finance.yahoo.com/markets/stocks/articles/york-space-systems-yss-wins-221013355.html"
+    "title": "Opendoor vs. Zillow: Which Real Estate Stock is the Better Buy?",
+    "url": "https://finance.yahoo.com/real-estate/articles/opendoor-vs-zillow-real-estate-153900545.html"
    },
    {
-    "date": "2026-08-24",
-    "title": "IonQ Makes Unexpected Move Beyond Quantum",
-    "url": "https://finance.yahoo.com/technology/articles/ionq-makes-unexpected-move-beyond-191115510.html"
-   },
-   {
-    "date": "2026-08-20",
-    "title": "York Space Systems (YSS) Q2 2026 Earnings Call Transcript",
-    "url": "https://www.fool.com/earnings/call-transcripts/2026/08/20/york-space-systems-yss-q2-2026-earnings-call-transcript/"
+    "date": "2026-08-21",
+    "title": "3 Small-Cap Stocks with Open Questions",
+    "url": "https://finance.yahoo.com/markets/stocks/articles/3-small-cap-stocks-open-164347646.html"
    }
   ],
   "bucket": "WATCH: weekly+band ok, waiting on 4h dot"
