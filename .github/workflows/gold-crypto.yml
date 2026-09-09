@@ -3,7 +3,7 @@ name: Cipher B gold-dot screen — crypto (24/7)
 # Crypto 1h bars close every hour. Run 4 minutes past each hour, every day.
 on:
   schedule:
-    - cron: '4 * * * *'
+     - cron: '4 12-23,0-4 * * *'
   workflow_dispatch:
 
 permissions:
@@ -22,6 +22,7 @@ jobs:
       - name: Run
         env:
           GOLD_UNIVERSE: crypto
+          ET_WINDOW: '09:00-23:10'
           GOLD_MAIL_ALWAYS: '0'        # '1' = e-mail every hour; '0' = only when a gold dot fires
           SMTP_HOST: smtp.gmail.com
           SMTP_PORT: '587'
