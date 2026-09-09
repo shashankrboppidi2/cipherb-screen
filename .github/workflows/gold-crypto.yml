@@ -1,10 +1,9 @@
-name: Cipher B gold-dot screen — equities
+name: Cipher B gold-dot screen — crypto (24/7)
 
-# Fires every hour at :35 from 13:35 to 21:35 UTC; gold_screen.py keeps only the runs that land at
-# 10:35, 12:35, 14:35 and 16:35 ET (4 per day, summer or winter). The extra firings exit in under a minute.
+# Crypto 1h bars close every hour. Run 4 minutes past each hour, every day.
 on:
   schedule:
-    - cron: '35 13-21 * * 1-5'
+    - cron: '4 * * * *'
   workflow_dispatch:
 
 permissions:
@@ -13,7 +12,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -22,10 +21,8 @@ jobs:
       - run: pip install -r requirements.txt
       - name: Run
         env:
-          ET_WINDOW: ${{ github.event_name == 'workflow_dispatch' && '' || '10:30-16:59' }}
-          ET_HOURS:  ${{ github.event_name == 'workflow_dispatch' && '' || '10,12,14,16' }}
-          GOLD_UNIVERSE: equity
-          GOLD_MAIL_ALWAYS: '0'        # '1' = e-mail every run; '0' = only when a gold dot fires
+          GOLD_UNIVERSE: crypto
+          GOLD_MAIL_ALWAYS: '0'        # '1' = e-mail every hour; '0' = only when a gold dot fires
           SMTP_HOST: smtp.gmail.com
           SMTP_PORT: '587'
           SMTP_USER: ${{ secrets.SMTP_USER }}
@@ -37,5 +34,5 @@ jobs:
           git config user.name  "cipherb-bot"
           git config user.email "bot@users.noreply.github.com"
           git add results/
-          git diff --quiet --cached || git commit -m "$(date -u +%FT%H:%M) gold"
+          git diff --quiet --cached || git commit -m "$(date -u +%FT%H:%M) gold-crypto"
           git pull --rebase && git push
