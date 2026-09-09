@@ -1,0 +1,38 @@
+name: Cipher B crypto screen (every 4h)
+
+# Crypto 4h bars close at 00/04/08/12/16/20 UTC. Run 6 minutes after each close.
+on:
+  schedule:
+    - cron: '6 0,4,8,12,16,20 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Run
+        env:
+          CRYPTO_TOP_N: '250'
+          CRYPTO_MAIL_ALWAYS: '0'      # '1' = e-mail every run; '0' = only when there is a FULL PASS
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '587'
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO:   ${{ secrets.MAIL_TO }}
+        run: python crypto_screen.py
+      - name: Commit results
+        run: |
+          git config user.name  "cipherb-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add results/
+          git diff --quiet --cached || git commit -m "$(date -u +%FT%H:%M) crypto"
+          git pull --rebase && git push
