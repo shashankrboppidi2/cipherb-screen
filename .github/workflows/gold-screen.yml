@@ -23,7 +23,7 @@ jobs:
       - name: Run
         env:
           ET_WINDOW: ${{ github.event_name == 'workflow_dispatch' && '' || '10:30-16:59' }}
-          ET_HOURS:  ${{ github.event_name == 'workflow_dispatch' && '' || '10,12,14,16' }}
+          ET_HOURS:  ${{ github.event_name == 'workflow_dispatch' && '' || '10,11,12,13,14,15,16' }}
           GOLD_MAIL_ALWAYS: '0'        # '1' = e-mail every run; '0' = only when a gold dot fires
           SMTP_HOST: smtp.gmail.com
           SMTP_PORT: '587'
