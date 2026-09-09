@@ -1,0 +1,49 @@
+name: Cipher B screen (2x daily)
+
+# GitHub cron is UTC-only and can't follow daylight-saving time, so each run fires twice an hour
+# apart and screen.py's ET_WINDOW guard lets exactly one of them proceed.
+on:
+  schedule:
+    - cron: '40 17 * * 1-5'   # mid-day     13:40 EDT / 12:40 EST
+    - cron: '40 18 * * 1-5'   # mid-day     14:40 EDT / 13:40 EST
+    - cron: '20 20 * * 1-5'   # post-close  16:20 EDT / 15:20 EST
+    - cron: '20 21 * * 1-5'   # post-close  17:20 EDT / 16:20 EST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Pick ET window from the trigger time
+        id: pick
+        run: |
+          H=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "window=" >> $GITHUB_OUTPUT
+          elif [ "$H" -le 18 ]; then echo "window=13:35-14:35" >> $GITHUB_OUTPUT
+          else                       echo "window=16:15-17:15" >> $GITHUB_OUTPUT
+          fi
+      - name: Run
+        env:
+          ET_WINDOW: ${{ steps.pick.outputs.window }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '587'
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO:   ${{ secrets.MAIL_TO }}
+        run: python screen.py
+      - name: Commit results
+        run: |
+          git config user.name  "cipherb-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add results/
+          git diff --quiet --cached || git commit -m "$(date -u +%FT%H:%M) screen"
+          git pull --rebase && git push
