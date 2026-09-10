@@ -3,7 +3,7 @@ name: Cipher B gold-dot screen — crypto (24/7)
 # Crypto 1h bars close every hour. Run 4 minutes past each hour, every day.
 on:
   schedule:
-     - cron: '4 12-23,0-4 * * *'
+     - cron: '23 12-23,0-4 * * *'
   workflow_dispatch:
 
 permissions:
