@@ -25,6 +25,17 @@ INDEX_WK_LEVEL, INDEX_WK_APPROACH = -40, -25
 DOT_BARS, TROUGH_BARS, FIB_LEN, FIB_BAND, MIN_BARS = 2, 6, 265, 0.236, 270
 RESULTS = "results"; TODAY = date.today().isoformat()
 INCLUDE_EXCHANGES = {"US", "TSX", "NEO"}
+HTF = os.getenv("HTF", "W").upper()            # W = weekly gate (default); 3D = three-day gate
+HTF_LABEL = "3-day" if HTF == "3D" else "weekly"
+PREFIX = "etf3d" if HTF == "3D" else "etf"
+
+def to_3d(daily):
+    """Group daily bars into 3-trading-day bars counted back from the latest bar (so the current bar always includes today)."""
+    d = daily.dropna(subset=["Close"]).copy()
+    grp = (len(d) - 1 - np.arange(len(d))) // 3
+    g = d.groupby(grp[::-1] if False else grp)
+    out = pd.DataFrame({"Open": g.Open.first(), "High": g.High.max(), "Low": g.Low.min(), "Close": g.Close.last(), "Volume": g.Volume.sum()})
+    out["ts"] = g.apply(lambda x: x.index[0]); return out.set_index("ts").sort_index()
 
 def load_universe():
     df = pd.read_csv("watchlists/etfs.csv")
@@ -38,7 +49,8 @@ def load_universe():
     df["yahoo"] = df.apply(yh, axis=1); df["tv"] = df.apply(tv, axis=1)
     return df[["rank","ticker","yahoo","tv","exchange","name","aum_usd_bn","category","leverage","avg_volume"]].reset_index(drop=True)
 
-def evaluate(u, h1, wk, mo):
+def evaluate(u, h1, wk, mo, dd=None):
+    if HTF == "3D": wk = to_3d(dd)
     d4 = to_4h_rth(h1); s4 = signals(d4)
     if len(s4) < MIN_BARS: return {**u, "err": f"only {len(s4)} 4h bars"}
     last = s4.iloc[-DOT_BARS:]; c = d4.Close.iloc[-FIB_LEN:]; mn, mx = float(c.min()), float(c.max())
@@ -57,7 +69,7 @@ def evaluate(u, h1, wk, mo):
     r["tier"] = ("HIGH" if r["wt2_trough"] <= HIGH_TROUGH else "STANDARD") if r["flag"] else ""
     if r["flag"]: r["bucket"] = "FULL PASS"
     elif r["in_zone"] and r["pass_wk"] and r["wt2_trough"] <= HIGH_TROUGH: r["bucket"] = "WATCH: weekly+band ok, waiting on 4h dot"
-    elif r["is_index"] and INDEX_WK_LEVEL < r["wk_wt2"] <= INDEX_WK_APPROACH: r["bucket"] = "APPROACHING: weekly heading toward -40"
+    elif r["is_index"] and INDEX_WK_LEVEL < r["wk_wt2"] <= INDEX_WK_APPROACH: r["bucket"] = f"APPROACHING: {HTF_LABEL} heading toward -40"
     elif (not r["is_index"]) and r["dot_last2"] and r["in_zone"] and WK_LEVEL < r["wk_wt2"] <= WK_NEAR: r["bucket"] = "NEAR: 4h+band ok, weekly shallow"
     elif r["dot_last2"] and r["pass_wk"]: r["bucket"] = "NEAR: 4h+weekly ok, above band"
     else: r["bucket"] = ""
@@ -73,6 +85,7 @@ def run(univ):
                 h = yf.download(chunk, start=start, interval="1h", auto_adjust=True, prepost=False, group_by="ticker", threads=True, progress=False)
                 w = yf.download(chunk, period="5y", interval="1wk", auto_adjust=True, group_by="ticker", threads=True, progress=False)
                 m = yf.download(chunk, period="10y", interval="1mo", auto_adjust=True, group_by="ticker", threads=True, progress=False)
+                dl = yf.download(chunk, period="3y", interval="1d", auto_adjust=True, group_by="ticker", threads=True, progress=False) if HTF == "3D" else None
                 break
             except Exception: time.sleep(10*(attempt+1))
         else:
@@ -80,7 +93,8 @@ def run(univ):
         for y in chunk:
             try:
                 hh = h[y].dropna(subset=["Close"]); ww = w[y].dropna(subset=["Close"]); mm = m[y].dropna(subset=["Close"])
-                rows.append(evaluate(by[y], hh, ww, mm) if len(hh) else {**by[y], "err": "no data"})
+                ddy = dl[y].dropna(subset=["Close"]) if dl is not None else None
+                rows.append(evaluate(by[y], hh, ww, mm, ddy) if len(hh) else {**by[y], "err": "no data"})
             except Exception as e: rows.append({**by[y], "err": str(e)[:60]})
         print(f"{i+len(chunk)}/{len(ys)}", flush=True)
     return pd.DataFrame(rows)
@@ -94,12 +108,12 @@ def html_report(df):
             f"<td>{r.dot_bar}</td><td>{fmt(r.wt2_trough)}</td><td>{fmt(r.wt2_now)}</td><td>{fmt(r.close,2)}</td><td>{fmt(r.zone_top,2)}</td>"
             f"<td>{fmt(r.wk_wt2)}</td><td>{fmt(r.mo_wt2)}</td></tr>" for r in sub.itertuples())
         return (f"<h3>{title} ({len(sub)})</h3><table border=1 cellpadding=4 style='border-collapse:collapse;font-size:13px'>"
-                "<tr><th>Tier</th><th>ETF</th><th>Lev</th><th>AUM $B</th><th>4h dot</th><th>4h trough</th><th>4h WT2 now</th><th>Close</th><th>Band top</th><th>Weekly WT2</th><th>Monthly WT2</th></tr>"
+                f"<tr><th>Tier</th><th>ETF</th><th>Lev</th><th>AUM $B</th><th>4h dot</th><th>4h trough</th><th>4h WT2 now</th><th>Close</th><th>Band top</th><th>{HTF_LABEL} WT2</th><th>Monthly WT2</th></tr>"
                 f"{rows}</table>")
     df = df.copy(); df["short"] = df.leverage.astype(str).str.contains("Short")
     idx = df[df.is_index]; longs, shorts = df[~df.short & ~df.is_index], df[df.short]
-    parts = [f"<h2>ETF screen — {TODAY}</h2><p>{len(df)} ETFs evaluated (US + Canada, leveraged included). Rule: 4h big green dot in last {DOT_BARS} bars, "
-             f"close in bottom {FIB_BAND} fib band ({FIB_LEN} bars), weekly WT2 ≤ {WK_LEVEL}. HIGH tier = 4h trough ≤ {HIGH_TROUGH}. Monthly WT2 is context only.</p>"]
+    parts = [f"<h2>ETF screen ({HTF_LABEL} gate) — {TODAY}</h2><p>{len(df)} ETFs evaluated (US + Canada, leveraged included). Rule: 4h big green dot in last {DOT_BARS} bars, "
+             f"close in bottom {FIB_BAND} fib band ({FIB_LEN} bars), {HTF_LABEL} WT2 ≤ {WK_LEVEL}. HIGH tier = 4h trough ≤ {HIGH_TROUGH}. Monthly WT2 is context only.</p>"]
     buckets = ["FULL PASS", "WATCH: weekly+band ok, waiting on 4h dot", "NEAR: 4h+band ok, weekly shallow", "NEAR: 4h+weekly ok, above band"]
     def section(sub, prefix):
         out = []
@@ -109,11 +123,11 @@ def html_report(df):
             else: x = x.sort_values(["wt2_trough", "wk_wt2"])
             out.append(table(x, f"{prefix}{b}"))
         return out
-    parts.append(f"<hr><h3>Index ETFs</h3><p>Broad-market index funds use a weekly gate of {INDEX_WK_LEVEL} instead of {WK_LEVEL}. "
-                 f"'Approaching' lists any with weekly WT2 between {INDEX_WK_APPROACH} and {INDEX_WK_LEVEL}, whatever the other gates say.</p>")
+    parts.append(f"<hr><h3>Index ETFs</h3><p>Broad-market index funds use a {HTF_LABEL} gate of {INDEX_WK_LEVEL} instead of {WK_LEVEL}. "
+                 f"'Approaching' lists any with {HTF_LABEL} WT2 between {INDEX_WK_APPROACH} and {INDEX_WK_LEVEL}, whatever the other gates say.</p>")
     parts += section(idx, "Index — ")
-    parts.append(table(idx[idx.bucket.str.startswith("APPROACHING")].sort_values("wk_wt2"), "Index — APPROACHING: weekly heading toward -40"))
-    parts.append(f"<hr><h3>All other ETFs (weekly gate {WK_LEVEL})</h3>")
+    parts.append(table(idx[idx.bucket.str.startswith("APPROACHING")].sort_values("wk_wt2"), f"Index — APPROACHING: {HTF_LABEL} heading toward -40"))
+    parts.append(f"<hr><h3>All other ETFs ({HTF_LABEL} gate {WK_LEVEL})</h3>")
     parts += section(longs, "")
     parts.append("<hr><h3>Inverse / short ETFs</h3><p>Listed separately: inverse funds decay structurally, so they sit in the oversold band whenever the market rises. Treat these as a different trade.</p>")
     parts += section(shorts, "Inverse — ")
@@ -124,11 +138,11 @@ def main():
     os.makedirs(RESULTS, exist_ok=True)
     univ = load_universe(); print(f"{len(univ)} ETFs")
     df = run(univ); ok = df[df.err.isna()].copy()
-    ok.to_csv(f"{RESULTS}/etf_{TODAY}.csv", index=False); ok.to_csv(f"{RESULTS}/etf_latest.csv", index=False)
-    html = html_report(ok); open(f"{RESULTS}/etf_report_{TODAY}.html", "w").write(html); open(f"{RESULTS}/etf_latest.html", "w").write(html)
+    ok.to_csv(f"{RESULTS}/{PREFIX}_{TODAY}.csv", index=False); ok.to_csv(f"{RESULTS}/{PREFIX}_latest.csv", index=False)
+    html = html_report(ok); open(f"{RESULTS}/{PREFIX}_report_{TODAY}.html", "w").write(html); open(f"{RESULTS}/{PREFIX}_latest.html", "w").write(html)
     n_full = int((ok.bucket == "FULL PASS").sum()); n_high = int((ok.tier == "HIGH").sum()); n_idx = int((ok.is_index & (ok.bucket != "")).sum())
     print(f"evaluated {len(ok)}; full passes: {n_full} (HIGH {n_high}); index flags: {n_idx}; watch/near: {int((ok.bucket != '').sum()) - n_full}")
-    send_mail(f"ETF screen {TODAY}: {n_full} full pass ({n_high} HIGH), {n_idx} index flags, {int((ok.bucket != '').sum()) - n_full} watch", html)
+    send_mail(f"ETF screen ({HTF_LABEL}) {TODAY}: {n_full} full pass ({n_high} HIGH), {n_idx} index flags, {int((ok.bucket != '').sum()) - n_full} watch", html)
 
 if __name__ == "__main__":
     main()
