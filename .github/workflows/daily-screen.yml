@@ -4,10 +4,10 @@ name: Cipher B screen (2x daily)
 # apart and screen.py's ET_WINDOW guard lets exactly one of them proceed.
 on:
   schedule:
-    - cron: '40 17 * * 1-5'   # mid-day     13:40 EDT / 12:40 EST
-    - cron: '40 18 * * 1-5'   # mid-day     14:40 EDT / 13:40 EST
-    - cron: '20 20 * * 1-5'   # post-close  16:20 EDT / 15:20 EST
-    - cron: '20 21 * * 1-5'   # post-close  17:20 EDT / 16:20 EST
+    - cron: '47 17 * * 1-5'   # mid-day     13:40 EDT / 12:40 EST
+    - cron: '47 18 * * 1-5'   # mid-day     14:40 EDT / 13:40 EST
+    - cron: '27 20 * * 1-5'   # post-close  16:20 EDT / 15:20 EST
+    - cron: '27 21 * * 1-5'   # post-close  17:20 EDT / 16:20 EST
   workflow_dispatch:
 
 permissions:
