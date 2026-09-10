@@ -3,7 +3,7 @@ name: Cipher B crypto screen (every 4h)
 # Crypto 4h bars close at 00/04/08/12/16/20 UTC. Run 6 minutes after each close.
 on:
   schedule:
-    - cron: '6 0,4,8,12,16,20 * * *'
+    - cron: '19 0,4,8,12,16,20 * * *'
   workflow_dispatch:
 
 permissions:
