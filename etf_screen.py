@@ -17,6 +17,11 @@ from screen import send_mail, in_et_window
 warnings.filterwarnings("ignore"); logging.getLogger("yfinance").setLevel(logging.CRITICAL)
 
 WK_LEVEL, WK_NEAR, HIGH_TROUGH = -60, -40, -60
+# Broad-market index ETFs: shallower weekly gate (-40) and an "approaching" flag from -25.
+INDEX_ETFS = set("""SPY VOO IVV SPLG QQQ QQQM DIA IWM IWB IWV VTI VTV VUG IWF IWD RSP MDY IJH IJR VXF VO VB SCHX SCHG SCHV SCHB SCHD VIG
+EFA EEM VEA VWO IEFA IEMG ACWI VT VXUS IXUS EWJ SPDW SPEM VEU
+XIU XIC ZCN VCN ZSP VFV XSP XUS XQQ ZQQ XEF XEC VEE ZEA XAW VXC XWD""".split())
+INDEX_WK_LEVEL, INDEX_WK_APPROACH = -40, -25
 DOT_BARS, TROUGH_BARS, FIB_LEN, FIB_BAND, MIN_BARS = 2, 6, 265, 0.236, 270
 RESULTS = "results"; TODAY = date.today().isoformat()
 INCLUDE_EXCHANGES = {"US", "TSX", "NEO"}
@@ -45,12 +50,15 @@ def evaluate(u, h1, wk, mo):
          "wt2_trough": float(s4.wt2.iloc[-TROUGH_BARS:].min()), "wt2_now": float(s4.wt2.iloc[-1]),
          "close": close, "zone_low": mn, "zone_top": mn + FIB_BAND*(mx-mn), "pct_of_range": (close-mn)/(mx-mn) if mx > mn else np.nan,
          "wk_wt2": float(sw.wt2.iloc[-1]), "mo_wt2": mo_wt2}
-    r["in_zone"] = close <= r["zone_top"]; r["pass_wk"] = r["wk_wt2"] <= WK_LEVEL
+    r["is_index"] = str(u["ticker"]) in INDEX_ETFS
+    wk_level = INDEX_WK_LEVEL if r["is_index"] else WK_LEVEL
+    r["in_zone"] = close <= r["zone_top"]; r["pass_wk"] = r["wk_wt2"] <= wk_level
     r["flag"] = r["dot_last2"] and r["in_zone"] and r["pass_wk"]
     r["tier"] = ("HIGH" if r["wt2_trough"] <= HIGH_TROUGH else "STANDARD") if r["flag"] else ""
     if r["flag"]: r["bucket"] = "FULL PASS"
     elif r["in_zone"] and r["pass_wk"] and r["wt2_trough"] <= HIGH_TROUGH: r["bucket"] = "WATCH: weekly+band ok, waiting on 4h dot"
-    elif r["dot_last2"] and r["in_zone"] and WK_LEVEL < r["wk_wt2"] <= WK_NEAR: r["bucket"] = "NEAR: 4h+band ok, weekly shallow"
+    elif r["is_index"] and INDEX_WK_LEVEL < r["wk_wt2"] <= INDEX_WK_APPROACH: r["bucket"] = "APPROACHING: weekly heading toward -40"
+    elif (not r["is_index"]) and r["dot_last2"] and r["in_zone"] and WK_LEVEL < r["wk_wt2"] <= WK_NEAR: r["bucket"] = "NEAR: 4h+band ok, weekly shallow"
     elif r["dot_last2"] and r["pass_wk"]: r["bucket"] = "NEAR: 4h+weekly ok, above band"
     else: r["bucket"] = ""
     return r
@@ -89,7 +97,7 @@ def html_report(df):
                 "<tr><th>Tier</th><th>ETF</th><th>Lev</th><th>AUM $B</th><th>4h dot</th><th>4h trough</th><th>4h WT2 now</th><th>Close</th><th>Band top</th><th>Weekly WT2</th><th>Monthly WT2</th></tr>"
                 f"{rows}</table>")
     df = df.copy(); df["short"] = df.leverage.astype(str).str.contains("Short")
-    longs, shorts = df[~df.short], df[df.short]
+    idx = df[df.is_index]; longs, shorts = df[~df.short & ~df.is_index], df[df.short]
     parts = [f"<h2>ETF screen — {TODAY}</h2><p>{len(df)} ETFs evaluated (US + Canada, leveraged included). Rule: 4h big green dot in last {DOT_BARS} bars, "
              f"close in bottom {FIB_BAND} fib band ({FIB_LEN} bars), weekly WT2 ≤ {WK_LEVEL}. HIGH tier = 4h trough ≤ {HIGH_TROUGH}. Monthly WT2 is context only.</p>"]
     buckets = ["FULL PASS", "WATCH: weekly+band ok, waiting on 4h dot", "NEAR: 4h+band ok, weekly shallow", "NEAR: 4h+weekly ok, above band"]
@@ -101,6 +109,11 @@ def html_report(df):
             else: x = x.sort_values(["wt2_trough", "wk_wt2"])
             out.append(table(x, f"{prefix}{b}"))
         return out
+    parts.append(f"<hr><h3>Index ETFs</h3><p>Broad-market index funds use a weekly gate of {INDEX_WK_LEVEL} instead of {WK_LEVEL}. "
+                 f"'Approaching' lists any with weekly WT2 between {INDEX_WK_APPROACH} and {INDEX_WK_LEVEL}, whatever the other gates say.</p>")
+    parts += section(idx, "Index — ")
+    parts.append(table(idx[idx.bucket.str.startswith("APPROACHING")].sort_values("wk_wt2"), "Index — APPROACHING: weekly heading toward -40"))
+    parts.append(f"<hr><h3>All other ETFs (weekly gate {WK_LEVEL})</h3>")
     parts += section(longs, "")
     parts.append("<hr><h3>Inverse / short ETFs</h3><p>Listed separately: inverse funds decay structurally, so they sit in the oversold band whenever the market rises. Treat these as a different trade.</p>")
     parts += section(shorts, "Inverse — ")
@@ -113,9 +126,9 @@ def main():
     df = run(univ); ok = df[df.err.isna()].copy()
     ok.to_csv(f"{RESULTS}/etf_{TODAY}.csv", index=False); ok.to_csv(f"{RESULTS}/etf_latest.csv", index=False)
     html = html_report(ok); open(f"{RESULTS}/etf_report_{TODAY}.html", "w").write(html); open(f"{RESULTS}/etf_latest.html", "w").write(html)
-    n_full = int((ok.bucket == "FULL PASS").sum()); n_high = int((ok.tier == "HIGH").sum())
-    print(f"evaluated {len(ok)}; full passes: {n_full} (HIGH {n_high}); watch/near: {int((ok.bucket != '').sum()) - n_full}")
-    send_mail(f"ETF screen {TODAY}: {n_full} full pass ({n_high} HIGH), {int((ok.bucket != '').sum()) - n_full} watch", html)
+    n_full = int((ok.bucket == "FULL PASS").sum()); n_high = int((ok.tier == "HIGH").sum()); n_idx = int((ok.is_index & (ok.bucket != "")).sum())
+    print(f"evaluated {len(ok)}; full passes: {n_full} (HIGH {n_high}); index flags: {n_idx}; watch/near: {int((ok.bucket != '').sum()) - n_full}")
+    send_mail(f"ETF screen {TODAY}: {n_full} full pass ({n_high} HIGH), {n_idx} index flags, {int((ok.bucket != '').sum()) - n_full} watch", html)
 
 if __name__ == "__main__":
     main()
