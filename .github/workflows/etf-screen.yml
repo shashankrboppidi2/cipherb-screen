@@ -1,0 +1,49 @@
+name: ETF screen (2x daily)
+
+# Same times as the stock screen. GitHub cron is UTC-only, so each run fires twice an hour apart
+# and etf_screen.py's ET_WINDOW guard keeps exactly one, summer or winter.
+on:
+  schedule:
+    - cron: '52 17 * * 1-5'   # mid-day     13:52 EDT / 12:52 EST
+    - cron: '52 18 * * 1-5'   # mid-day     14:52 EDT / 13:52 EST
+    - cron: '32 20 * * 1-5'   # post-close  16:32 EDT / 15:32 EST
+    - cron: '32 21 * * 1-5'   # post-close  17:32 EDT / 16:32 EST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -r requirements.txt
+      - name: Pick ET window from the trigger time
+        id: pick
+        run: |
+          H=$(date -u +%H)
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "window=" >> $GITHUB_OUTPUT
+          elif [ "$H" -le 18 ]; then echo "window=13:35-14:59" >> $GITHUB_OUTPUT
+          else                       echo "window=16:15-17:15" >> $GITHUB_OUTPUT
+          fi
+      - name: Run
+        env:
+          ET_WINDOW: ${{ steps.pick.outputs.window }}
+          SMTP_HOST: smtp.gmail.com
+          SMTP_PORT: '587'
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASS: ${{ secrets.SMTP_PASS }}
+          MAIL_TO:   ${{ secrets.MAIL_TO }}
+        run: python etf_screen.py
+      - name: Commit results
+        run: |
+          git config user.name  "cipherb-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add results/
+          git diff --quiet --cached || git commit -m "$(date -u +%FT%H:%M) etf"
+          git pull --rebase && git push
